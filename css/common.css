@@ -1,0 +1,318 @@
+/** ========== Utility Classes for this project ==========  */
+
+:root {
+    --primary: #2E4FD7;
+    --secondary: #E7EBFC;
+    --dark-100: #052825;
+    --dark-200: #1E1E1E;
+    --dark-300: #191919;
+    --white: #fff;
+    --hover--primary: #1A3BC3;
+}
+
+
+/** ========== Backgrounds ==========  */
+.bg-primary {
+    background-color: var(--primary);
+}
+
+.bg-secondary {
+    background-color: var(--secondary);
+}
+
+.bg-dark {
+    background-color: var(--dark-100);
+}
+
+.bg-white {
+    background-color: var(--white);
+}
+
+
+/** ========== Texts ==========  */
+.text-start {
+    text-align: start;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-end {
+    text-align: end;
+}
+
+.text-primary {
+    color: var(--dark-300);
+}
+
+.text-secondary {
+    color: var(--dark-200);
+}
+
+.fw-bold {
+    font-weight: 700;
+}
+
+.fw-regular {
+    font-weight: 400;
+}
+
+
+/** ========== Buttons ==========  */
+.btn {
+    display: inline-block;
+    border: 1px solid var(--primary);
+    padding: 15px 25px;
+    font-size: 1rem;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn--primary {
+    color: var(--white);
+    background-color: var(--primary);
+}
+
+.btn--primary:hover {
+    background-color: var(--hover--primary);
+}
+
+.btn--secondary {
+    background-color: var(--white);
+    color: var(--primary);
+}
+
+.btn--secondary:hover {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+
+/** ========== Layout ==========  */
+.d-flex {
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-evenly {
+    justify-content: space-evenly;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/** ========== Spacing ==========  */
+/** 10,15,20px => margin & padding  */
+
+/*! margin 10px  */
+.m-10 {
+    margin: 10px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.ms-10 {
+    margin-left: 10px;
+}
+
+.me-10 {
+    margin-right: 10px;
+}
+
+.mx-10 {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.my-10 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*! margin 15px  */
+.m-15 {
+    margin: 15px;
+}
+
+.mt-15 {
+    margin-top: 15px;
+}
+
+.mb-15 {
+    margin-bottom: 15px;
+}
+
+.ms-15 {
+    margin-left: 15px;
+}
+
+.me-15 {
+    margin-right: 15px;
+}
+
+.mx-15 {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.my-15 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/*! margin 20px  */
+.m-20 {
+    margin: 20px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.ms-20 {
+    margin-left: 20px;
+}
+
+.me-20 {
+    margin-right: 20px;
+}
+
+.mx-20 {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.my-20 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*! padding 10px  */
+.p-10 {
+    padding: 10px;
+}
+
+.pt-10 {
+    padding-top: 10px;
+}
+
+.pb-10 {
+    padding-bottom: 10px;
+}
+
+.ps-10 {
+    padding-left: 10px;
+}
+
+.pe-10 {
+    padding-right: 10px;
+}
+
+.px-10 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.py-10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/*! padding 15px  */
+.p-15 {
+    padding: 15px;
+}
+
+.pt-15 {
+    padding-top: 15px;
+}
+
+.pb-15 {
+    padding-bottom: 15px;
+}
+
+.ps-15 {
+    padding-left: 15px;
+}
+
+.pe-15 {
+    padding-right: 15px;
+}
+
+.px-15 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.py-15 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/*! padding 20px  */
+.p-20 {
+    padding: 20px;
+}
+
+.pt-20 {
+    padding-top: 20px;
+}
+
+.pb-20 {
+    padding-bottom: 20px;
+}
+
+.ps-20 {
+    padding-left: 20px;
+}
+
+.pe-20 {
+    padding-right: 20px;
+}
+
+.px-20 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.py-20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
