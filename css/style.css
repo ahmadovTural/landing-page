@@ -1,0 +1,36 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/** ========== Header Section ========== */
+header {
+    padding: 20px 0;
+}
+
+.nav__logo {
+    margin-right: 50px;
+}
+
+.nav__link {
+    display: inline-block;
+    font-size: 18px;
+    position: relative;
+    margin-right: 25px;
+}
+
+.nav__link::after {
+    content: ' ';
+    width: 0%;
+    height: 3px;
+    background-color: var(--primary);
+    display: inline-block;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    border-radius: 10px;
+    transition: all .4s ease-in-out;
+}
+
+.nav__link:hover::after {
+    width: 100%;
+}
