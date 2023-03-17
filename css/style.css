@@ -212,3 +212,59 @@ header {
     padding-top: 50px;
     border-top: 2px solid #B4B4B4;
 }
+
+
+/** ========== Features Section ========== */
+.features {
+    padding: 100px 0;
+}
+
+.features .row .col {
+    width: 46%;
+}
+
+.features .row .col:nth-child(2) {
+    justify-content: end;
+}
+
+.features .row .col:first-child {
+    flex-wrap: wrap;
+}
+
+.feature__box {
+    width: 49%;
+    padding: 20px;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.feature__box:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.feature__box i {
+    font-size: 30px;
+    color: var(--primary);
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+.feature__box i:hover {
+    color: var(--hover--primary);
+}
+
+.feature__title {
+    font-size: 25px;
+    line-height: 1.1;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+}
+
+.feature__title:hover {
+    color: var(--primary);
+}
+
+.feature__description {
+    line-height: 1.6;
+}
