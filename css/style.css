@@ -168,7 +168,7 @@ header {
 }
 
 .about__heading {
-    font-size: 45px;
+    font-size: 50px;
     line-height: 1.1;
 }
 
@@ -176,4 +176,39 @@ header {
     margin-bottom: 30px;
     width: 450px;
     line-height: 1.6;
+}
+
+
+/** ========== Banner Section ========== */
+.banner {
+    padding: 100px 0;
+}
+
+.banner .col {
+    flex-direction: column;
+}
+
+.banner__title {
+    font-size: 50px;
+    line-height: 1.1;
+}
+
+.banner__title span,
+.banner__description span {
+    display: block;
+}
+
+.banner__description {
+    margin: 30px 0 40px;
+    line-height: 1.6;
+}
+
+.banner .btn {
+    margin-bottom: 50px;
+}
+
+.banner .brands {
+    gap: 3rem;
+    padding-top: 50px;
+    border-top: 2px solid #B4B4B4;
 }
