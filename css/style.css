@@ -268,3 +268,39 @@ header {
 .feature__description {
     line-height: 1.6;
 }
+
+
+/** ========== How it works Section ========== */
+.howit {
+    padding: 100px 0;
+}
+
+.howit__title {
+    font-size: 50px;
+    width: 100%;
+    display: block;
+    margin-bottom: 50px;
+}
+
+.howit .col {
+    width: 100%;
+}
+
+.howit__img {
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+.howit__img:hover {
+    transform: scale(1.1);
+}
+
+.howit__info {
+    font-size: 25px;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+}
+
+.howit__info:hover {
+    color: var(--primary);
+}
