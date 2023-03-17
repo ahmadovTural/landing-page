@@ -75,3 +75,49 @@ header {
     width: 250px;
     line-height: 1.4;
 }
+
+
+/** ========== Home Section ========== */
+.home {
+    padding: 100px 0;
+}
+
+.home__heading {
+    font-size: 55px;
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.home .row .col {
+    width: 46%;
+    margin-bottom: 40px;
+}
+
+.home .icon {
+    display: inline-flex;
+    align-items: center;
+    padding: 24px;
+    border-radius: 100%;
+    margin-right: 25px;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+.home .icon:hover {
+    transform: rotate(45deg);
+}
+
+.home__title {
+    font-size: 22px;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+}
+
+.home__title:hover {
+    color: var(--primary);
+}
+
+.home__description {
+    line-height: 1.6;
+}
