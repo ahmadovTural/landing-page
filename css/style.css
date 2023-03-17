@@ -304,3 +304,71 @@ header {
 .howit__info:hover {
     color: var(--primary);
 }
+
+
+/** ========== Services Section ========== */
+.services {
+    padding: 100px 0;
+}
+
+.service__heading {
+    font-size: 50px;
+    line-height: 1.1;
+    margin-bottom: 50px;
+}
+
+.service__heading span {
+    display: block;
+}
+
+.services .row .col {
+    width: 30%;
+    padding: 35px;
+    margin-bottom: 25px;
+    background-color: var(--secondary);
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+.services .row .col:hover {
+    transform: scale(1.03);
+}
+
+.service__img {
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+    margin-bottom: 50px;
+}
+
+.service__img:hover {
+    transform: rotate(45deg);
+}
+
+.service__title {
+    font-size: 22px;
+}
+
+.service__description {
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.btn--borderless {
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0;
+    color: var(--primary);
+    font-size: 18px;
+
+}
+
+.btn--borderless i {
+    display: inline-block;
+    transition: all .4s ease-in-out;
+}
+
+.btn--borderless:hover i {
+    transform: translateX(7px);
+}
