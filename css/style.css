@@ -461,3 +461,60 @@ header {
 .contact__message {
     margin-bottom: 35px;
 }
+
+
+/** ========== Footer Section ========== */
+footer {
+    padding: 100px 0;
+}
+
+.first-row {
+    margin-bottom: 50px;
+}
+
+.first-row .col:first-child {
+    width: 35%;
+}
+
+.first-row .col:last-child {
+    width: 55%;
+}
+
+.company__name {
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+.company__title {
+    font-size: 18px;
+}
+
+.company__info {
+    line-height: 1.6;
+}
+
+.company__info span {
+    display: block;
+}
+
+.footer__link {
+    padding: 10px 20px;
+    border: 1px solid #B4B4B4;
+    margin-right: 25px;
+    color: var(--white);
+    transition: all .4s ease-in-out;
+}
+
+.footer__link:hover {
+    background-color: var(--white);
+    color: var(--dark-300);
+}
+
+.second-row {
+    padding-top: 50px;
+    border-top: 1px solid #B4B4B4;
+}
+
+.second-row .col {
+    width: 46%;
+}
