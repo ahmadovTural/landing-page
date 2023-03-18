@@ -1,5 +1,28 @@
 body {
     font-family: 'Inter', sans-serif;
+    position: relative;
+}
+
+::selection {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: whitesmoke;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary);
+    border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--hover--primary);
 }
 
 /** ========== Header Section ========== */
