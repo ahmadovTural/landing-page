@@ -3,6 +3,7 @@ body {
     position: relative;
 }
 
+
 ::selection {
     background-color: var(--primary);
     color: var(--white);
@@ -70,10 +71,6 @@ header {
 
 
 /** ========== Hero Section ========== */
-.hero {
-    padding: 100px 0;
-}
-
 .hero .row .col {
     width: 50%;
 }
@@ -81,13 +78,11 @@ header {
 .hero__heading {
     font-size: 65px;
     letter-spacing: -1px;
-    line-height: 1.1;
 }
 
 .hero__description {
     margin: 30px 0 40px;
     width: 470px;
-    line-height: 1.6;
 }
 
 .hero__button {
@@ -96,17 +91,11 @@ header {
 
 .hero__button p {
     width: 250px;
-    line-height: 1.4;
 }
 
 
 /** ========== Home Section ========== */
-.home {
-    padding: 100px 0;
-}
-
 .home__heading {
-    font-size: 55px;
     display: block;
     width: 100%;
     margin-bottom: 40px;
@@ -132,7 +121,6 @@ header {
 }
 
 .home__title {
-    font-size: 22px;
     transition: all .4s ease-in-out;
     cursor: pointer;
 }
@@ -141,16 +129,8 @@ header {
     color: var(--primary);
 }
 
-.home__description {
-    line-height: 1.6;
-}
-
 
 /** ========== About Section ========== */
-.about {
-    padding: 100px 0;
-}
-
 .about .row .col {
     width: 43%;
 }
@@ -177,7 +157,6 @@ header {
 }
 
 .about__title {
-    font-size: 22px;
     transition: all .4s ease-in-out;
     cursor: pointer;
 }
@@ -186,34 +165,15 @@ header {
     color: var(--primary);
 }
 
-.about__description {
-    line-height: 1.6;
-}
-
-.about__heading {
-    font-size: 50px;
-    line-height: 1.1;
-}
-
 .about__text {
     margin-bottom: 30px;
     width: 450px;
-    line-height: 1.6;
 }
 
 
 /** ========== Banner Section ========== */
-.banner {
-    padding: 100px 0;
-}
-
 .banner .col {
     flex-direction: column;
-}
-
-.banner__title {
-    font-size: 50px;
-    line-height: 1.1;
 }
 
 .banner__title span,
@@ -223,7 +183,6 @@ header {
 
 .banner__description {
     margin: 30px 0 40px;
-    line-height: 1.6;
 }
 
 .banner .btn {
@@ -238,10 +197,6 @@ header {
 
 
 /** ========== Features Section ========== */
-.features {
-    padding: 100px 0;
-}
-
 .features .row .col {
     width: 46%;
 }
@@ -278,8 +233,6 @@ header {
 }
 
 .feature__title {
-    font-size: 25px;
-    line-height: 1.1;
     transition: all .4s ease-in-out;
     cursor: pointer;
 }
@@ -288,18 +241,10 @@ header {
     color: var(--primary);
 }
 
-.feature__description {
-    line-height: 1.6;
-}
 
 
 /** ========== How it works Section ========== */
-.howit {
-    padding: 100px 0;
-}
-
-.howit__title {
-    font-size: 50px;
+.howit__heading {
     width: 100%;
     display: block;
     margin-bottom: 50px;
@@ -330,13 +275,7 @@ header {
 
 
 /** ========== Services Section ========== */
-.services {
-    padding: 100px 0;
-}
-
 .service__heading {
-    font-size: 50px;
-    line-height: 1.1;
     margin-bottom: 50px;
 }
 
@@ -368,50 +307,16 @@ header {
     transform: rotate(45deg);
 }
 
-.service__title {
-    font-size: 22px;
-}
-
 .service__description {
-    line-height: 1.6;
     margin-bottom: 40px;
 }
 
-.btn--borderless {
-    border: none;
-    background-color: transparent;
-    box-shadow: none;
-    padding: 0;
-    color: var(--primary);
-    font-size: 18px;
-
-}
-
-.btn--borderless i {
-    display: inline-block;
-    transition: all .4s ease-in-out;
-}
-
-.btn--borderless:hover i {
-    transform: translateX(7px);
-}
-
-
 /** ========== Contact Section ========== */
-.contact {
-    padding: 100px 0;
-}
-
 .contact .row .col {
     width: 46%;
 }
 
-.contact__title {
-    font-size: 50px;
-}
-
 .contact__description {
-    line-height: 1.6;
     margin: 30px 0 60px;
     width: 480px;
 }
@@ -450,12 +355,7 @@ header {
     border-radius: 7px;
 }
 
-.form__title {
-    font-size: 28px;
-}
-
 .form__description {
-    line-height: 1.6;
     margin: 25px 0 40px;
 }
 
@@ -488,7 +388,7 @@ header {
 
 /** ========== Footer Section ========== */
 footer {
-    padding: 100px 0;
+    padding: 100px 0 50px;
 }
 
 .first-row {
@@ -506,14 +406,6 @@ footer {
 .company__name {
     font-size: 25px;
     margin-bottom: 40px;
-}
-
-.company__title {
-    font-size: 18px;
-}
-
-.company__info {
-    line-height: 1.6;
 }
 
 .company__info span {
