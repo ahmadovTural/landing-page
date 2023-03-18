@@ -28,7 +28,6 @@
     background-color: var(--white);
 }
 
-
 /** ========== Texts ==========  */
 .text-start {
     text-align: start;
@@ -50,6 +49,14 @@
     color: var(--dark-200);
 }
 
+.text-white {
+    color: var(--white);
+}
+
+.text-white-200 {
+    color: rgb(219, 214, 214);
+}
+
 .fw-bold {
     font-weight: 700;
 }
@@ -69,6 +76,25 @@
     cursor: pointer;
     transition: all 300ms;
     box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn--borderless {
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0;
+    color: var(--primary);
+    font-size: 18px;
+
+}
+
+.btn--borderless i {
+    display: inline-block;
+    transition: all .4s ease-in-out;
+}
+
+.btn--borderless:hover i {
+    transform: translateX(7px);
 }
 
 .btn--primary {
@@ -94,6 +120,10 @@
 /** ========== Layout ==========  */
 .d-flex {
     display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
 }
 
 .align-center {
@@ -129,13 +159,8 @@
 
 
 /** ========== Spacing ==========  */
-/** 10,15,20px => margin & padding  */
-
+/** ========== Most used margins and paddings ==========  */
 /*! margin 10px  */
-.m-10 {
-    margin: 10px;
-}
-
 .mt-10 {
     margin-top: 10px;
 }
@@ -148,66 +173,13 @@
     margin-left: 10px;
 }
 
-.me-10 {
-    margin-right: 10px;
-}
-
-.mx-10 {
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.my-10 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-/*! margin 15px  */
-.m-15 {
-    margin: 15px;
-}
-
-.mt-15 {
-    margin-top: 15px;
-}
-
-.mb-15 {
-    margin-bottom: 15px;
-}
-
-.ms-15 {
-    margin-left: 15px;
-}
-
-.me-15 {
-    margin-right: 15px;
-}
-
-.mx-15 {
-    margin-left: 15px;
-    margin-right: 15px;
-}
-
-.my-15 {
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
 /*! margin 20px  */
-.m-20 {
-    margin: 20px;
-}
-
 .mt-20 {
     margin-top: 20px;
 }
 
 .mb-20 {
     margin-bottom: 20px;
-}
-
-.ms-20 {
-    margin-left: 20px;
 }
 
 .me-20 {
@@ -219,100 +191,21 @@
     margin-right: 20px;
 }
 
-.my-20 {
-    margin-top: 20px;
-    margin-bottom: 20px;
+
+/** ========== Mutual Styles ==========  */
+section {
+    padding: 100px 0;
 }
 
-/*! padding 10px  */
-.p-10 {
-    padding: 10px;
+[class*="__title"] {
+    font-size: 25px;
 }
 
-.pt-10 {
-    padding-top: 10px;
+[class*="__heading"] {
+    line-height: 1.1;
+    font-size: 50px;
 }
 
-.pb-10 {
-    padding-bottom: 10px;
-}
-
-.ps-10 {
-    padding-left: 10px;
-}
-
-.pe-10 {
-    padding-right: 10px;
-}
-
-.px-10 {
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.py-10 {
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-/*! padding 15px  */
-.p-15 {
-    padding: 15px;
-}
-
-.pt-15 {
-    padding-top: 15px;
-}
-
-.pb-15 {
-    padding-bottom: 15px;
-}
-
-.ps-15 {
-    padding-left: 15px;
-}
-
-.pe-15 {
-    padding-right: 15px;
-}
-
-.px-15 {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.py-15 {
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-
-/*! padding 20px  */
-.p-20 {
-    padding: 20px;
-}
-
-.pt-20 {
-    padding-top: 20px;
-}
-
-.pb-20 {
-    padding-bottom: 20px;
-}
-
-.ps-20 {
-    padding-left: 20px;
-}
-
-.pe-20 {
-    padding-right: 20px;
-}
-
-.px-20 {
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.py-20 {
-    padding-top: 20px;
-    padding-bottom: 20px;
+p {
+    line-height: 1.6;
 }
