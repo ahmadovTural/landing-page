@@ -56,6 +56,13 @@
                     <div class="col">
                         <button class="btn btn--primary">Book A Meeting</button>
                     </div>
+                    <div class="col">
+                        <div class="hamburger">
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -77,13 +84,13 @@
                         <p class="text-secondary fw-regular">Here you can put secondary action statement & CTA</p>
                     </div>
                     <div class="hero__brands d-flex align-center">
-                        <a href="https://www.logitech.com/" target="_blank">
+                        <a class="hero__brand" href="https://www.logitech.com/" target="_blank">
                             <img src="img/logitech.png" alt="logitech brand logo">
                         </a>
-                        <a href="https://www.google.com" target="_blank">
+                        <a class="hero__brand" href="https://www.google.com" target="_blank">
                             <img src="img/google.png" alt="google brand logo" class="mx-20">
                         </a>
-                        <a href="https://www.amazon.com" target="_blank">
+                        <a class="hero__brand" href="https://www.amazon.com" target="_blank">
                             <img src="img/amazon.png" alt="amazon brand logo">
                         </a>
                     </div>
@@ -229,12 +236,24 @@
                         </p>
                         <button class="btn btn--primary">Book A Meeting</button>
                         <div class="brands d-flex align-center">
-                            <img src="img/philips.png" alt="philips brand logo">
-                            <img src="img/logitech.png" alt="logitech brand logo">
-                            <img src="img/amazon.png" alt="amazon brand logo">
-                            <img src="img/facebook.png" alt="facebook brand logo">
-                            <img src="img/google.png" alt="google brand logo">
-                            <img src="img/linkedin.png" alt="linkedin brand logo">
+                            <div class="brand">
+                                <img src="img/philips.png" alt="philips brand logo">
+                            </div>
+                            <div class="brand">
+                                <img src="img/logitech.png" alt="logitech brand logo">
+                            </div>
+                            <div class="brand">
+                                <img src="img/amazon.png" alt="amazon brand logo">
+                            </div>
+                            <div class="brand">
+                                <img src="img/facebook.png" alt="facebook brand logo">
+                            </div>
+                            <div class="brand">
+                                <img src="img/google.png" alt="google brand logo">
+                            </div>
+                            <div class="brand">
+                                <img src="img/linkedin.png" alt="linkedin brand logo">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -479,12 +498,31 @@
                         marketing and sales performance like never before.
                     </p>
                 </div>
-                <div class="col">
-                    <p class="copyright text-end text-white-200">© 2015-2023 Openthrive. All right reserved.</p>
+                <div class="col d-flex justify-end">
+                    <p class="copyright text-white-200">© 2015-2023 Openthrive. All right reserved.</p>
                 </div>
             </div>
         </div>
     </footer>
+
+
+
+    <!--* Javascript for responsive navbar   -->
+    <script>
+        const hamburgerBtn = document.querySelector('.hamburger')
+        const navMenu = document.querySelector('.nav__menu')
+        let navLinks = document.querySelectorAll('.nav__link')
+
+        hamburgerBtn.addEventListener('click', () => {
+            hamburgerBtn.classList.toggle('active')
+            navMenu.classList.toggle('active')
+        });
+
+        navLinks.forEach(navLink => navLink.addEventListener(('click'), () => {
+            hamburgerBtn.classList.remove('active')
+            navMenu.classList.remove('active')
+        }))
+    </script>
 </body>
 
 </html>
